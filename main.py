@@ -3,7 +3,7 @@ from pydantic import BaseModel
 import joblib
  
 app = FastAPI()
-model = joblib.load("../model.joblib")           # loaded ONCE
+model = joblib.load("model.joblib")           # loaded ONCE
 labels = ["setosa", "versicolor", "virginica"]
  
 # Pydantic model = automatic input validation
